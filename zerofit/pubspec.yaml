@@ -19,6 +19,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  flip_card: ^0.4.4
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
@@ -41,9 +42,23 @@ flutter:
   uses-material-design: true
 
   # To add assets to your application, add an assets section, like this:
-  # assets:
-  #  - images/a_dot_burr.jpeg
-  #  - images/a_dot_ham.jpeg
+  assets:
+    - assets/leg/abducao.jpg
+    - assets/leg/aducao.jpg
+    - assets/leg/extensora.jpg
+    - assets/leg/flexora.jpg
+    - assets/leg/hack.jpg
+    - assets/leg/leg45.jpg
+    - assets/leg/panturilha.jpg
+    - assets/flexao-lat-tronco.jpg
+    - assets/puxada-peito.jpg
+    - assets/remada.jpg
+    - assets/rosca-alternada.jpg
+    - assets/rosca-direta.jpg
+    - assets/supino-inclinado.jpg
+    - assets/supino-reto.jpg
+    - assets/tri-corda.jpg
+    - assets/tri-frances.jpg
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
