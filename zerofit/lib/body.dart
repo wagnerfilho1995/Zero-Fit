@@ -13,7 +13,25 @@ class _CorpoState extends State<Corpo> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Center(
-        child: Text('Pag do corpo.'),
+        child: ListView(
+          children: <Widget>[ 
+            Padding(
+                padding: EdgeInsets.symmetric(horizontal: 20, vertical: 20),
+                child: CircleAvatar(
+                backgroundImage: AssetImage('assets/jackie.jpg'),
+                radius: 150,
+              )
+            ),
+            Padding(
+                padding: EdgeInsets.symmetric(horizontal: 20, vertical: 20),
+                child: Text('Jackie')
+              ),
+              Padding(
+                padding: EdgeInsets.symmetric(horizontal: 20, vertical: 0),
+                child: Text('28 anos')
+              )
+          ]
+        ),
       )
     );
   }

@@ -22,14 +22,31 @@ class _TreinosState extends State<Treinos> {
                 padding: EdgeInsets.symmetric(horizontal: 20, vertical: 10),
                 child: Text('Ficha de Treinamento', style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold, color: Colors.white),textAlign: TextAlign.center),
               ),
+               Padding(
+                padding: EdgeInsets.symmetric(horizontal: 40, vertical: 0),
+                child: Divider(
+                  color: Colors.white,
+                  thickness: 1,
+                )
+              ),
               Padding(
-                padding: EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+                padding: EdgeInsets.symmetric(horizontal: 5, vertical: 0),
                 child: FlipCard(
                   direction: FlipDirection.HORIZONTAL,
                   front: Container(
                     color: Colors.red,
                       child: Column(
                         children: <Widget>[
+                          Divider(
+                            height: 5,
+                          ),
+                          Text('Lado A', 
+                          style: TextStyle(
+                              fontSize: 26, 
+                              fontWeight: FontWeight.bold, 
+                              color: Colors.white,
+                            )
+                          ),
                           ListTile(
                             leading: CircleAvatar(
                               backgroundImage: AssetImage('assets/leg/leg45.jpg')
@@ -158,6 +175,16 @@ class _TreinosState extends State<Treinos> {
                     color: Colors.blue,
                       child: Column(
                         children: <Widget>[
+                          Divider(
+                            height: 5,
+                          ),
+                          Text('Lado B', 
+                          style: TextStyle(
+                              fontSize: 26, 
+                              fontWeight: FontWeight.bold, 
+                              color: Colors.white,
+                            )
+                          ),
                           ListTile(
                             leading: CircleAvatar(
                               backgroundImage: AssetImage('assets/leg/flexora.jpg')
@@ -273,14 +300,6 @@ class _TreinosState extends State<Treinos> {
                           ),
                         ]
                       ),
-                      /*child: ListTile(
-                        leading: CircleAvatar(
-                          backgroundImage: AssetImage('assets/leg/leg45.jpg')
-                        ),
-                        title: Text('Leg 45°', style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold, color: Colors.white)),
-                        subtitle: Text('3x', style: TextStyle(fontSize: 18, color: Colors.white)),
-                        trailing: Icon(Icons.keyboard_arrow_right, color: Colors.white),
-                      )*/
                   ),
                 )
               )
