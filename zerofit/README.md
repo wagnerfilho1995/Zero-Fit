@@ -1,6 +1,6 @@
 # zerofit
 
-A new Flutter project.
+Esta é uma aplicação simples em flutter para auxiliar pessoas a fazer um auto acompanhamento do seu progresso na academia.
 
 ## Getting Started
 

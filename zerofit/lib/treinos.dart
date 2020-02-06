@@ -10,6 +10,8 @@ class Treinos extends StatefulWidget {
 
 class _TreinosState extends State<Treinos> {
 
+  GlobalKey<FlipCardState> cardKey = GlobalKey<FlipCardState>();
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -32,21 +34,13 @@ class _TreinosState extends State<Treinos> {
               Padding(
                 padding: EdgeInsets.symmetric(horizontal: 5, vertical: 0),
                 child: FlipCard(
+                  key: cardKey,
+                  flipOnTouch: false,
                   direction: FlipDirection.HORIZONTAL,
                   front: Container(
                     color: Colors.red,
                       child: Column(
                         children: <Widget>[
-                          Divider(
-                            height: 5,
-                          ),
-                          Text('Lado A', 
-                          style: TextStyle(
-                              fontSize: 26, 
-                              fontWeight: FontWeight.bold, 
-                              color: Colors.white,
-                            )
-                          ),
                           ListTile(
                             leading: CircleAvatar(
                               backgroundImage: AssetImage('assets/leg/leg45.jpg')
@@ -160,6 +154,10 @@ class _TreinosState extends State<Treinos> {
                             subtitle: Text('3x', style: TextStyle(fontSize: 18, color: Colors.white)),
                             trailing: Icon(Icons.keyboard_arrow_right, color: Colors.white),
                           ),
+                          RaisedButton(
+                            onPressed: () => cardKey.currentState.toggleCard(),
+                            child: Text('Toggle'),
+                          ),
                         ]
                       ),
                       /*child: ListTile(
@@ -175,16 +173,6 @@ class _TreinosState extends State<Treinos> {
                     color: Colors.blue,
                       child: Column(
                         children: <Widget>[
-                          Divider(
-                            height: 5,
-                          ),
-                          Text('Lado B', 
-                          style: TextStyle(
-                              fontSize: 26, 
-                              fontWeight: FontWeight.bold, 
-                              color: Colors.white,
-                            )
-                          ),
                           ListTile(
                             leading: CircleAvatar(
                               backgroundImage: AssetImage('assets/leg/flexora.jpg')
@@ -297,6 +285,10 @@ class _TreinosState extends State<Treinos> {
                             title: Text('Rosca Alternada', style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold, color: Colors.white)),
                             subtitle: Text('3x', style: TextStyle(fontSize: 18, color: Colors.white)),
                             trailing: Icon(Icons.keyboard_arrow_right, color: Colors.white),
+                          ),
+                          FlatButton(
+                            onPressed: () => cardKey.currentState.toggleCard(),
+                            child: Text('Virar'),
                           ),
                         ]
                       ),

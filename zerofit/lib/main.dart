@@ -6,9 +6,11 @@ import 'aerobic.dart';
 void main() => runApp(App());
 
 class App extends StatelessWidget {
+ 
  @override
  Widget build(BuildContext context) {
    return MaterialApp(
+     
       home: MyBottomNavigationBar(),
     );
   }
@@ -20,7 +22,7 @@ class MyBottomNavigationBar extends StatefulWidget {
 }
 
 class _MyBottomNavigationBarState extends State<MyBottomNavigationBar> {
-
+  
   int _currentIndex = 0;
   final List<Widget> _children = [
     Treinos(),
