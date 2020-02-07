@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:flip_card/flip_card.dart';
 
-class Treinos extends StatefulWidget {
+class Ficha extends StatefulWidget {
   @override
   State<StatefulWidget> createState() {
-    return _TreinosState();
+    return _FichaState();
   }
 }
 
-class _TreinosState extends State<Treinos> {
+class _FichaState extends State<Ficha> {
 
   GlobalKey<FlipCardState> cardKey = GlobalKey<FlipCardState>();
 
