@@ -1,18 +1,12 @@
 import 'package:flutter/material.dart';
 
 class Login extends StatefulWidget {
-  final bool login;
-  Login(this.login);
-
+ 
   @override
   _LoginState createState() => _LoginState();
 }
 
 class _LoginState extends State<Login> {
-  bool wrongPasswordControl;
-  bool is_visible = false;
-  TextEditingController _user;
-  TextEditingController _passw;
 
   @override
   Widget build(BuildContext context) {
@@ -25,6 +19,14 @@ class _LoginState extends State<Login> {
         child: Center(
           child: ListView(
             children: <Widget>[
+              SizedBox(height: 30,),
+              Image.asset('assets/gym-logo.jpg', width: 150.0, height: 160.0),
+              SizedBox(height: 30,),
+              Padding(
+                padding: EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+                child: TextField()
+              ),
+
           ],
         ),
         ),
