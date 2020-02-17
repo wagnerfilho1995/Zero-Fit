@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'bottomNavigationBar.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 
 class Login extends StatefulWidget {
  
@@ -11,6 +12,7 @@ class _LoginState extends State<Login> {
 
   bool is_visible = false;
   bool isSwitched = false;
+  String _email, _password;
 
   Icon set_icon_visible(){
     if(is_visible){
@@ -54,7 +56,13 @@ class _LoginState extends State<Login> {
                       onPressed: (){
                       },
                     )
-                  )
+                  ),
+                  onChanged: (value){
+                    setState(() {
+                      _email = value;
+                      debugPrint(_email);
+                    });
+                  },
                 )
               ),
               SizedBox(height: 10,),
@@ -81,7 +89,13 @@ class _LoginState extends State<Login> {
                       }, 
                       child: set_icon_visible(),
                     )
-                  )
+                  ),
+                  onChanged: (value){
+                    setState(() {
+                      _password = value;
+                      debugPrint(_password);
+                    });
+                  },
                 )
               ),
               Row(

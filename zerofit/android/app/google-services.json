@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "689529594134",
+    "firebase_url": "https://fitness-14fd5.firebaseio.com",
+    "project_id": "fitness-14fd5",
+    "storage_bucket": "fitness-14fd5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:689529594134:android:bdd66359ceb182091fb037",
+        "android_client_info": {
+          "package_name": "com.example.zerofit"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "689529594134-ufrtl4s38ggsum24qs1a2lncndf3r2ue.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCQkJrC16OgS8z3F8dJeCyUX_E6K6cBkq8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "689529594134-ufrtl4s38ggsum24qs1a2lncndf3r2ue.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
